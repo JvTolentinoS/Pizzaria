@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/template.css">
+    <script src="/js/scriptGeral.js"></script>
+    <link rel="icon" href="/img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<body>
+<div class="content-wrapper">
+    <header class="header-container">
+        <div class="header-content">
+        </div>
+    </header>
+    <section class="banner-section-container">
+        <div class="banner-div-container">
+            <div class="banner-section-container-content">
+                <div>
+                    <h1 class="banner-title e">O melhor sabor de Carapicuiba</h1>
+                </div>
+                <div>
+                    <h2 class="banner-text e texto-branco">Venha descobrir nosso cardápio especial</h2>
+                </div>
+                <div>
+                    <p class="banner-desc e texto-branco">Temos Pizza de Calabresa, Brócolis, Mussarela, Portuguesa e muito mais!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="endereco-section-container container">
+        <div class="endereco-div-container">
+            <div class="endereco-section-container-content texto-preto">
+                <div>
+                    <h2 class="e texto-preto">Informe seu endereço!</h2>
+                </div>
+                    <form method="get" action=".">
+                        <div class="form-container-endereco"></div>
+                        <label>CEP:</label>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label>
+                        <p class="e"></p>
+                        <label>Rua:</label>
+                        <input name="rua" type="text" id="rua" size="60" />
+                        <p class="e"></p>   
+                        <label>Bairro:</label>
+                        <input name="bairro" type="text" id="bairro" size="40" />
+                        <p class="e"></p>   
+                        <label>Cidade:</label>
+                        <input name="cidade" type="text" id="cidade" size="40" />
+                        <p class="e"></p>   
+                        <label>Estado:</label>
+                        <input name="uf" type="text" id="uf" size="2" />
+                        <p class="e"></p>    
+                    </div>      
+                    </form>
+            </div>
+        </div>
+    </section>
+    <section class="list-section-container container">
+        <div class="list-div-container">
+            <div class="container">
+                <h1 class="texto-branco e menu grande">M E N U</h1>
+            </div>
+            <div class="pizza-container texto-branco">
+                <div class="pizza-content" onclick="selecionar(0)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Mussarela</h3>
+                        <p class="e ingrediente">Mussarela com molho de tomate temperado</p>
+                    </div>
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">25,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(1)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Ricota</h3>
+                        <p class="e ingrediente">Ricota com molho de tomate</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">44,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(2)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Bacon</h3>
+                        <p class="e ingrediente">Mussarela com bacon e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">40,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(3)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Brócolis</h3>
+                        <p class="e ingrediente">Brócolis, bacon e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">50,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(4)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Calabresa</h3>
+                        <p class="e ingrediente">Calabresa, cebola e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">25,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(5)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Búfala</h3>
+                        <p class="e ingrediente">Mussarela de búfala</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">40,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(6)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Portuguesa</h3>
+                        <p class="e ingrediente">Presunto, ovo, cebola e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">30,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(7)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Alho</h3>
+                        <p class="e ingrediente">Alho frito, parmesão e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">48,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(8)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Catupiry</h3>
+                        <p class="e ingrediente">Catupiry com molho de tomate</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">37,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(9)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Vegetariana</h3>
+                        <p class="e ingrediente">Champignon, palmito, brócolis e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">53,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(10)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Abobrinha</h3>
+                        <p class="e ingrediente">Abobrinha grelhada em conserva com parmesão</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">26,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(11)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Escarola</h3>
+                        <p class="e ingrediente">Escarola temperada com aliche, cebola, mussarela e azeitonas verdes</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">66,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(12)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Margarida</h3>
+                        <p class="e ingrediente">Mussarela, parmesão, rodelas de tomate e manjericão</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">41,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(13)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Milho</h3>
+                        <p class="e ingrediente">Catupiry coberto de milho</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">26,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(14)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Moda da Casa</h3>
+                        <p class="e ingrediente">Presunto, azeitonas verdes picadas, coberta com mussarela</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">36,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(15)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Napolitana</h3>
+                        <p class="e ingrediente">Mussarela, parmesão e molho de tomate</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">36,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(16)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Provolone</h3>
+                        <p class="e ingrediente">Provolone com molho de tomate</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">47,00</p>
+                    </div>
+                </div>
+                
+                <div class="pizza-content" onclick="selecionar(17)">
+                    <div class="pizza-content-info">
+                        <h3 class="e medio texto-amarelo" name="tipo">Sardela</h3>
+                        <p class="e ingrediente">Filé de cavalinha, berinjela curtida, cebola e azeitonas verdes, mussarela</p>
+                    </div>  
+                    <div class="pizza-content-price">
+                        <p class="e medio" name="custo">46,00</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="order-section-container container">
+    <div class="order-div-container" id="DIVordem">
+        <div class="order-div-title">
+            <img src="/img/entregaicon.png" alt="enfeite-entrega" class="icone">
+            <h1 class="menu">SEU PEDIDO</h1>
+        </div>
+    </div>
+    </section>
+    <footer class="footer-container">
+        <div class="footer-content">    
+        </div>
+    </footer>
+</div>
+</body>
+</html>
